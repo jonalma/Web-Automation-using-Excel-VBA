@@ -30,7 +30,7 @@ Worksheets("FraudNotification").Cells(1, 12).Font.Bold = True
         my_title = objShell.Windows(x).Document.Title
 
         'You can use my_title of my_url, whichever you want
-        If my_title Like "Kibana 3 - Logstash Search" Or my_url Like "*log.j2noc.com*" Then   'identify the existing web page
+        If my_title Like "Kibana 3 - Logstash Search" Or my_url Like "*the site url*" Then   'identify the existing web page
             Set ie = objShell.Windows(x)
             Exit For
         Else
